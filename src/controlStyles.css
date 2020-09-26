@@ -1,0 +1,22 @@
+.plus,
+.minus {
+  padding: auto;
+  /* text-align: center; */
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: hsla(63, 80%, 68%, 100%);
+  margin: 1rem;
+  padding: 1rem;
+  width: min-content;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.plus-img,
+.minus-img {
+  width: 1rem;
+  display: inline-block;
+}

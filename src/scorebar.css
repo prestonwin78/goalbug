@@ -1,0 +1,30 @@
+.bar-section-container {
+  background-color: hsla(222, 35%, 37%, 100%);
+  width: 50%;
+  height: 4.25em;
+  border: none;
+  border-radius: 0.3rem;
+  margin: auto;
+  padding: 0.25rem 0.25rem 0 0.25rem;
+  color: white;
+}
+
+#score-text {
+  padding: 0 0 0.25rem 0.5rem;
+}
+
+.bar-container {
+  background-color: black;
+  width: 80%;
+  height: 2rem;
+  border: none;
+  margin: auto;
+}
+
+.percent-bar {
+  background-color: lightgreen;
+  height: 100%;
+  width: 100%;
+  animation-name: movebar;
+  animation-duration: 1s;
+}
