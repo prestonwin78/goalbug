@@ -1,9 +1,9 @@
 import React from "react";
-import "./controlStyles.css";
+import "./styles/controlStyles.css";
 
 function Controls(props) {
   return (
-    <div>
+    <div className="controls-container">
       <div className="plus" onClick={props.increment}>
         <img
           className="plus-img"

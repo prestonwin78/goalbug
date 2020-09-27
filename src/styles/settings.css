@@ -1,0 +1,11 @@
+.settings-container {
+  width: 50%;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.settings-container label {
+  display: inline-block;
+}

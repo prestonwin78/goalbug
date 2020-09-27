@@ -1,8 +1,8 @@
 import React from "react";
-import "./scorebar.css";
+import "./styles/scorebar.css";
 
+/*
 function animateBar(fromWidth, toWidth) {
-  /*
   $.keyframe.define([
     {
       name: "animate-bar",
@@ -15,11 +15,11 @@ function animateBar(fromWidth, toWidth) {
     duration: "1s",
     timingFunction: "linear",
   });
-  */
 }
+*/
 
 function ScoreBar(props) {
-  animateBar(0, props.score);
+  /* animateBar(0, props.score); */
   return (
     <div className="bar-section-container">
       <h3 id="score-text">Score: {props.score}</h3>

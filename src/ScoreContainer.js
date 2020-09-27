@@ -1,6 +1,7 @@
 import React from "react";
 import Controls from "./Controls";
 import ScoreBar from "./ScoreBar";
+import SettingsForm from "./SettingsForm";
 
 class ScoreContainer extends React.Component {
   constructor() {
@@ -28,7 +29,8 @@ class ScoreContainer extends React.Component {
   decrementScore() {
     this.setState((prevState) => {
       let newScore = prevState.score;
-      if (--newScore <= 0) {
+      newScore -= 10;
+      if (newScore <= 0) {
         newScore = 0;
       }
       return {
@@ -40,6 +42,7 @@ class ScoreContainer extends React.Component {
   render() {
     return (
       <div>
+        <SettingsForm />
         <Controls
           increment={this.incrementScore}
           decrement={this.decrementScore}
