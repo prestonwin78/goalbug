@@ -71,6 +71,14 @@ class ScoreContainer extends React.Component {
           increment={this.incrementScore}
           decrement={this.decrementScore}
         />
+
+        {/* for testing output only */}
+        <div style={{ display: "none" }}>
+          <h1>goal: {this.state.goal}</h1>
+          <h1>start: {this.state.start}</h1>
+          <h1>add: {this.state.addIncrements}</h1>
+          <h1>sub: {this.state.subDecrements}</h1>
+        </div>
       </div>
     );
   }
