@@ -1,18 +1,19 @@
 .settings-container {
   width: 50%;
-  margin: auto;
+  margin: 2rem auto 2rem auto;
   border: 1px solid gray;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .block {
-  width: 100%;
-  text-align: right;
+  width: 80%;
+  margin: 1.25rem 1rem;
 }
 
 .block label {
-  width: 50%;
+  width: 60%;
+  display: inline-block;
 }
 
 .block input {

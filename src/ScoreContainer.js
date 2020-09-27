@@ -43,11 +43,21 @@ class ScoreContainer extends React.Component {
     return (
       <div>
         <SettingsForm />
+        <h2
+          style={{
+            color: "lightgray",
+            textAlign: "center",
+            marginBottom: "1.5rem",
+            marginTop: "3rem",
+          }}
+        >
+          Your Scorebar:
+        </h2>
+        <ScoreBar score={this.state.score} />
         <Controls
           increment={this.incrementScore}
           decrement={this.decrementScore}
         />
-        <ScoreBar score={this.state.score} />
       </div>
     );
   }
