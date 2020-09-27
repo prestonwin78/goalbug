@@ -6,6 +6,18 @@
   padding: 1rem;
 }
 
-.settings-container label {
-  display: inline-block;
+.block {
+  width: 100%;
+  text-align: right;
+}
+
+.block label {
+  width: 50%;
+}
+
+.block input {
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid lightgray;
 }

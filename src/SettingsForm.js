@@ -22,30 +22,33 @@ class SettingsForm extends React.Component {
   render() {
     return (
       <div className="settings-container">
-        <label>
-          Goal:
+        <div className="block">
+          <label>Goal:</label>
           <input type="text" name="goal" onChange={this.handleChange} />
-        </label>
-        <label>
-          Starting Value:
+        </div>
+
+        <div className="block">
+          <label>Starting Value:</label>
           <input type="text" name="start" onChange={this.handleChange} />
-        </label>
-        <label>
-          Add in increments of:
+        </div>
+
+        <div className="block">
+          <label>Add in increments of:</label>
           <input
             type="text"
             name="addIncrements"
             onChange={this.handleChange}
           />
-        </label>
-        <label>
-          Subtract in decrements of:
+        </div>
+
+        <div className="block">
+          <label>Subtract in decrements of:</label>
           <input
             type="text"
             name="subDecrements"
             onChange={this.handleChange}
           />
-        </label>
+        </div>
 
         <h1>goal: {this.state.goal}</h1>
         <h1>start: {this.state.start}</h1>
