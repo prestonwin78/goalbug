@@ -2,8 +2,8 @@ import React from "react";
 import "./styles/settings.css";
 
 class SettingsForm extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       goal: 0,
       start: 100,
@@ -14,9 +14,7 @@ class SettingsForm extends React.Component {
   }
 
   handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
+    this.props.setSetting(event.target.name, event.target.value);
   }
 
   render() {

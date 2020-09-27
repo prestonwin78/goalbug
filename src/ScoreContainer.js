@@ -8,9 +8,14 @@ class ScoreContainer extends React.Component {
     super();
     this.state = {
       score: 0,
+      goal: 0,
+      start: 100,
+      addIncrements: 10,
+      subDecrements: 10,
     };
     this.incrementScore = this.incrementScore.bind(this);
     this.decrementScore = this.decrementScore.bind(this);
+    this.setSetting = this.setSetting.bind(this);
   }
 
   incrementScore() {
@@ -39,10 +44,18 @@ class ScoreContainer extends React.Component {
     });
   }
 
+  /* this method is passed to the settings form
+     and called on state change in the form */
+  setSetting(key, value) {
+    this.setState({
+      [key]: value,
+    });
+  }
+
   render() {
     return (
       <div>
-        <SettingsForm />
+        <SettingsForm setSetting={this.setSetting} />
         <h2
           style={{
             color: "lightgray",
