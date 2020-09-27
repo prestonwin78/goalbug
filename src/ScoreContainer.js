@@ -8,8 +8,8 @@ class ScoreContainer extends React.Component {
     super();
     this.state = {
       score: 0,
-      goal: 0,
-      start: 100,
+      goal: 100,
+      start: 0,
       addIncrements: 10,
       subDecrements: 10,
     };
@@ -21,9 +21,9 @@ class ScoreContainer extends React.Component {
   incrementScore() {
     this.setState((prevState) => {
       let newScore = prevState.score;
-      newScore += 10;
-      if (newScore >= 100) {
-        newScore = 100;
+      newScore += prevState.addIncrements;
+      if (newScore >= prevState.goal) {
+        newScore = prevState.goal;
       }
       return {
         score: newScore,
@@ -34,9 +34,9 @@ class ScoreContainer extends React.Component {
   decrementScore() {
     this.setState((prevState) => {
       let newScore = prevState.score;
-      newScore -= 10;
-      if (newScore <= 0) {
-        newScore = 0;
+      newScore -= prevState.subDecrements;
+      if (newScore <= prevState.start) {
+        newScore = prevState.start;
       }
       return {
         score: newScore,
@@ -48,7 +48,7 @@ class ScoreContainer extends React.Component {
      and called on state change in the form */
   setSetting(key, value) {
     this.setState({
-      [key]: value,
+      [key]: parseInt(value, 10),
     });
   }
 
@@ -66,7 +66,13 @@ class ScoreContainer extends React.Component {
         >
           Your Scorebar:
         </h2>
-        <ScoreBar score={this.state.score} />
+        <ScoreBar
+          score={this.state.score}
+          goal={this.state.goal}
+          start={this.state.start}
+          addIncrements={this.state.addIncrements}
+          subDecrements={this.state.subDecrements}
+        />
         <Controls
           increment={this.incrementScore}
           decrement={this.decrementScore}

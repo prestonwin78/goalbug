@@ -1,25 +1,9 @@
 import React from "react";
 import "./styles/scorebar.css";
 
-/*
-function animateBar(fromWidth, toWidth) {
-  $.keyframe.define([
-    {
-      name: "animate-bar",
-      "0%": { width: "0%" },
-      "100%": { width: "" + toWidth + "%" },
-    },
-  ]);
-  $(".percent-bar").playKeyframe({
-    name: "animate-bar",
-    duration: "1s",
-    timingFunction: "linear",
-  });
-}
-*/
-
 function ScoreBar(props) {
-  /* animateBar(0, props.score); */
+  const completionPercent =
+    ((props.score - props.start) / (props.goal - props.start)) * 100;
   return (
     <div className="bar-section-container">
       <h3 id="score-text">Score: {props.score}</h3>
@@ -27,7 +11,7 @@ function ScoreBar(props) {
         <div
           className="percent-bar"
           style={{
-            width: "" + props.score + "%",
+            width: "" + completionPercent + "%",
           }}
         ></div>
       </div>

@@ -21,6 +21,10 @@ class SettingsForm extends React.Component {
     return (
       <div className="settings-container">
         <div className="block">
+          <h1>Settings</h1>
+        </div>
+
+        <div className="block">
           <label>Goal:</label>
           <input type="text" name="goal" onChange={this.handleChange} />
         </div>
