@@ -15,7 +15,18 @@ class SettingsForm extends React.Component {
   }
 
   handleChange(event) {
-    this.props.setSetting(event.target.name, event.target.value);
+    if (
+      event.target.name === "backgroundColor" ||
+      event.target.name === "barColor"
+    ) {
+      this.props.setSetting(event.target.name, event.target.value);
+    } else {
+      const regex = RegExp("-?[0-9]+");
+      if (regex.test(event.target.value)) {
+        console.log("yep");
+        this.props.setSetting(event.target.name, event.target.value);
+      }
+    }
   }
 
   render() {
