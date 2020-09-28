@@ -23,7 +23,6 @@ class SettingsForm extends React.Component {
     } else {
       const regex = RegExp("-?[0-9]+");
       if (regex.test(event.target.value)) {
-        console.log("yep");
         this.props.setSetting(event.target.name, event.target.value);
       }
     }

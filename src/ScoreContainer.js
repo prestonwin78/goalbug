@@ -14,6 +14,7 @@ class ScoreContainer extends React.Component {
       subDecrements: 10,
       backgroundColor: "navy",
       barColor: "green",
+      valid: "true",
     };
     this.incrementScore = this.incrementScore.bind(this);
     this.decrementScore = this.decrementScore.bind(this);
@@ -49,14 +50,36 @@ class ScoreContainer extends React.Component {
   /* this method is passed to the settings form
      and called on state change in the form */
   setSetting(key, value) {
+    let isValid = "true";
     if (key === "backgroundColor" || key === "barColor") {
       this.setState({
         [key]: value,
       });
     } else {
-      this.setState({
-        [key]: parseInt(value, 10),
-      });
+      if (key === "start") {
+        const newStart = parseInt(value, 10);
+        if (this.state.goal <= newStart) {
+          isValid = "false";
+        }
+        this.setState({
+          start: newStart,
+          score: newStart,
+          valid: isValid,
+        });
+      } else if (key === "goal") {
+        const newGoal = parseInt(value, 10);
+        if (newGoal <= this.state.start) {
+          isValid = "false";
+        }
+        this.setState({
+          [key]: parseInt(value, 10),
+          valid: isValid,
+        });
+      } else {
+        this.setState({
+          [key]: parseInt(value, 10),
+        });
+      }
     }
   }
 
@@ -96,6 +119,7 @@ class ScoreContainer extends React.Component {
           <h1>sub: {this.state.subDecrements}</h1>
           <h1>bg: {this.state.backgroundColor}</h1>
           <h1>bar: {this.state.barColor}</h1>
+          <h1>isValid: {this.state.valid}</h1>
         </div>
       </div>
     );
