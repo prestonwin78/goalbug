@@ -26,7 +26,8 @@
   border: 1px solid lightgray;
 }
 
-.background-select {
+.background-select,
+.bar-color-select {
   width: 25%;
 }
 

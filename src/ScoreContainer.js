@@ -12,7 +12,8 @@ class ScoreContainer extends React.Component {
       start: 0,
       addIncrements: 10,
       subDecrements: 10,
-      backgroundColor: "navy-op",
+      backgroundColor: "navy",
+      barColor: "green",
     };
     this.incrementScore = this.incrementScore.bind(this);
     this.decrementScore = this.decrementScore.bind(this);
@@ -48,9 +49,9 @@ class ScoreContainer extends React.Component {
   /* this method is passed to the settings form
      and called on state change in the form */
   setSetting(key, value) {
-    if (key === "backgroundColor") {
+    if (key === "backgroundColor" || key === "barColor") {
       this.setState({
-        backgroundColor: value,
+        [key]: value,
       });
     } else {
       this.setState({
@@ -80,6 +81,7 @@ class ScoreContainer extends React.Component {
           addIncrements={this.state.addIncrements}
           subDecrements={this.state.subDecrements}
           backgroundColor={this.state.backgroundColor}
+          barColor={this.state.barColor}
         />
         <Controls
           increment={this.incrementScore}
@@ -93,6 +95,7 @@ class ScoreContainer extends React.Component {
           <h1>add: {this.state.addIncrements}</h1>
           <h1>sub: {this.state.subDecrements}</h1>
           <h1>bg: {this.state.backgroundColor}</h1>
+          <h1>bar: {this.state.barColor}</h1>
         </div>
       </div>
     );

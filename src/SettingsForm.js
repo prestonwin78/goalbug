@@ -70,6 +70,24 @@ class SettingsForm extends React.Component {
             <option className="none" value="none"></option>
           </select>
         </div>
+
+        <div className="block">
+          <label>Bar Color</label>
+          <select
+            className="bar-color-select"
+            name="barColor"
+            onChange={this.handleChange}
+          >
+            <option className="navy" value="navy"></option>
+            <option className="blue" value="blue"></option>
+            <option className="red" value="red"></option>
+            <option className="yellow" value="yellow"></option>
+            <option className="green" value="green"></option>
+            <option className="purple" value="purple"></option>
+            <option className="orange" value="orange"></option>
+            <option className="none" value="none"></option>
+          </select>
+        </div>
       </div>
     );
   }

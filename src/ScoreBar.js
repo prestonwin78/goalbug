@@ -5,13 +5,14 @@ import "./styles/settings.css";
 function ScoreBar(props) {
   const completionPercent =
     ((props.score - props.start) / (props.goal - props.start)) * 100;
-  const colorClass = "bar-section-container " + props.backgroundColor;
+  const backgroundColorClass = "bar-section-container " + props.backgroundColor;
+  const barColorClass = "percent-bar " + props.barColor;
   return (
-    <div className={colorClass}>
+    <div className={backgroundColorClass}>
       <h3 id="score-text">Score: {props.score}</h3>
       <div className="bar-container">
         <div
-          className="percent-bar"
+          className={barColorClass}
           style={{
             width: "" + completionPercent + "%",
           }}
