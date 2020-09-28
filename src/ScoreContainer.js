@@ -105,6 +105,7 @@ class ScoreContainer extends React.Component {
           subDecrements={this.state.subDecrements}
           backgroundColor={this.state.backgroundColor}
           barColor={this.state.barColor}
+          valid={this.state.valid}
         />
         <Controls
           increment={this.incrementScore}

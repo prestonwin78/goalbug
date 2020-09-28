@@ -3,10 +3,14 @@ import "./styles/scorebar.css";
 import "./styles/settings.css";
 
 function ScoreBar(props) {
-  const completionPercent =
-    ((props.score - props.start) / (props.goal - props.start)) * 100;
   const backgroundColorClass = "bar-section-container " + props.backgroundColor;
   const barColorClass = "percent-bar " + props.barColor;
+  let completionPercent = 0;
+  if (props.valid === "true") {
+    completionPercent =
+      ((props.score - props.start) / (props.goal - props.start)) * 100;
+  }
+
   return (
     <div className={backgroundColorClass}>
       <h3 id="score-text">Score: {props.score}</h3>
