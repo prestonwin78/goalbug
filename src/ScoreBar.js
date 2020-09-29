@@ -23,9 +23,9 @@ function ScoreBar(props) {
       </div>
 
       <div className="bar-container">
+        {/* Animation for sliding percent bar */}
         <Spring
-          from={{ width: "0%" }}
-          to={{ width: "100%" }}
+          to={{ width: completionPercent + "%" }}
           config={{ duration: 1000 }}
         >
           {(props) => <div style={props} className={barColorClass}></div>}
