@@ -23,8 +23,8 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        {/*this.state.onLanding && <Landing changeState={this.changeState} /> */}
-        {/*!*/ this.state.onLanding && <ScoreContainer />}
+        {this.state.onLanding && <Landing changeState={this.changeState} />}
+        {!this.state.onLanding && <ScoreContainer />}
       </div>
     );
   }
