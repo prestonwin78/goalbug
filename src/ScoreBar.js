@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/scorebar.css";
 import "./styles/settings.css";
+import { Spring } from "react-spring/renderprops";
 
 function ScoreBar(props) {
   const backgroundColorClass = "bar-section-container " + props.backgroundColor;
@@ -22,12 +23,13 @@ function ScoreBar(props) {
       </div>
 
       <div className="bar-container">
-        <div
-          className={barColorClass}
-          style={{
-            width: "" + completionPercent + "%",
-          }}
-        ></div>
+        <Spring
+          from={{ width: "0%" }}
+          to={{ width: "100%" }}
+          config={{ duration: 1000 }}
+        >
+          {(props) => <div style={props} className={barColorClass}></div>}
+        </Spring>
       </div>
 
       <div class="goal">
