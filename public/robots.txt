@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# Only index for root page
 User-agent: *
-Disallow:
+Allow: /$ 
+Disallow: / 
