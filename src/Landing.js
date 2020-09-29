@@ -5,8 +5,8 @@ function Landing(props) {
   return (
     <div className="body">
       <div className="card">
-        <h1>Scorebar - Designed for Twitch/OBS</h1>
-        <p>
+        <h1 className="landing-header">Scorebar - Designed for Twitch/OBS</h1>
+        <p className="landing-paragraph">
           With Scorebar, you can design a custom, modern scorebar to suit your
           needs and improve your stream.
         </p>
