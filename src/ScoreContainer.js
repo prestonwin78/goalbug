@@ -85,7 +85,8 @@ class ScoreContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="body">
+        <div style={{ height: "3rem" }}></div>
         <SettingsForm setSetting={this.setSetting} />
         <h2
           style={{

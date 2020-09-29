@@ -1,0 +1,50 @@
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 100;
+  width: 75%;
+  display: inline-block;
+  margin: 10%;
+}
+
+p {
+  color: whitesmoke;
+  font-size: 1rem;
+  margin: 10%;
+  margin-top: 0;
+}
+
+.button-container {
+  width: 100%;
+  display: inline-block;
+}
+
+#get-started {
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid hsl(282, 0%, 57%);
+  font-size: 1.25rem;
+  background-color: hsl(282, 43%, 48%);
+  color: white;
+  width: 20%;
+  display: block;
+  margin: 10% auto;
+  text-align: center;
+}
+
+#get-started:hover {
+  background-color: hsl(282, 65%, 63%);
+  cursor: pointer;
+}
+
+.image-container {
+  width: 100%;
+  display: inline-block;
+}
+
+.scorebar-example {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
