@@ -78,6 +78,7 @@ class ScoreContainer extends React.Component {
         }
         this.setState({
           [key]: parseInt(value, 10),
+          score: 0,
           valid: isValid,
         });
       } else {
