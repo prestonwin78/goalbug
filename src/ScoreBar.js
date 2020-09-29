@@ -13,7 +13,9 @@ function ScoreBar(props) {
 
   return (
     <div className={backgroundColorClass}>
-      <h3 id="score-text">Score: {props.score}</h3>
+      <h3 id="score-text">
+        {props.scoreText} {props.score}
+      </h3>
       <div className="bar-container">
         <div
           className={barColorClass}

@@ -14,6 +14,7 @@ class ScoreContainer extends React.Component {
       subDecrements: 10,
       backgroundColor: "navy",
       barColor: "green",
+      scoreText: "Score: ",
       valid: "true",
     };
     this.incrementScore = this.incrementScore.bind(this);
@@ -51,7 +52,11 @@ class ScoreContainer extends React.Component {
      and called on state change in the form */
   setSetting(key, value) {
     let isValid = "true";
-    if (key === "backgroundColor" || key === "barColor") {
+    if (
+      key === "backgroundColor" ||
+      key === "barColor" ||
+      key === "scoreText"
+    ) {
       this.setState({
         [key]: value,
       });
@@ -106,6 +111,7 @@ class ScoreContainer extends React.Component {
           subDecrements={this.state.subDecrements}
           backgroundColor={this.state.backgroundColor}
           barColor={this.state.barColor}
+          scoreText={this.state.scoreText}
           valid={this.state.valid}
         />
         <Controls

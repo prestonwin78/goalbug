@@ -17,7 +17,8 @@ class SettingsForm extends React.Component {
   handleChange(event) {
     if (
       event.target.name === "backgroundColor" ||
-      event.target.name === "barColor"
+      event.target.name === "barColor" ||
+      event.target.name === "scoreText"
     ) {
       this.props.setSetting(event.target.name, event.target.value);
     } else {
@@ -61,6 +62,11 @@ class SettingsForm extends React.Component {
             name="subDecrements"
             onChange={this.handleChange}
           />
+        </div>
+
+        <div className="block">
+          <label>Score text:</label>
+          <input type="text" name="scoreText" onChange={this.handleChange} />
         </div>
 
         <div className="block">
