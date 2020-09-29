@@ -19,6 +19,7 @@
   height: 2rem;
   border: none;
   margin: auto;
+  float: left;
 }
 
 .percent-bar {
@@ -27,4 +28,21 @@
   width: 100%;
   animation-name: movebar;
   animation-duration: 1s;
+}
+
+.start,
+.goal {
+  display: block;
+  width: 10%;
+  float: left;
+  height: 2rem;
+  font-weight: 100;
+}
+
+.start h3,
+.goal h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

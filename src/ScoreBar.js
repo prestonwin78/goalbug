@@ -16,6 +16,11 @@ function ScoreBar(props) {
       <h3 id="score-text">
         {props.scoreText} {props.score}
       </h3>
+
+      <div class="start">
+        <h3>{props.start}</h3>
+      </div>
+
       <div className="bar-container">
         <div
           className={barColorClass}
@@ -23,6 +28,10 @@ function ScoreBar(props) {
             width: "" + completionPercent + "%",
           }}
         ></div>
+      </div>
+
+      <div class="goal">
+        <h3>{props.goal}</h3>
       </div>
     </div>
   );
