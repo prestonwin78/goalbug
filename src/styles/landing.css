@@ -3,16 +3,27 @@
   font-size: 3rem;
   text-align: center;
   font-weight: 100;
-  width: 75%;
-  display: inline-block;
-  margin: 10%;
+  padding: 10%;
 }
 
-.landing-paragraph {
-  color: whitesmoke;
-  font-size: 1rem;
-  margin: 10%;
-  margin-top: 0;
+.info-container {
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  color: white;
+  text-align: center;
+  background-color: rgb(18, 9, 66);
+  padding: 2rem 0;
+}
+
+.info-container ul {
+  padding: 2rem;
+  width: 50%;
+  margin: auto;
+  display: inline-block;
+}
+
+.info-container li {
+  text-align: left;
 }
 
 .button-container {
@@ -21,30 +32,32 @@
 }
 
 #get-started {
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-radius: 1rem;
   border: 1px solid hsl(282, 0%, 57%);
   font-size: 1.25rem;
-  background-color: hsl(282, 43%, 48%);
+  background-color: rgb(255, 172, 46);
   color: white;
   width: 20%;
   display: block;
   margin: 10% auto;
   text-align: center;
+  border: 1px solid black;
 }
 
 #get-started:hover {
-  background-color: hsl(282, 65%, 63%);
+  background-color: hsl(39, 100%, 50%);
   cursor: pointer;
 }
 
 .image-container {
   width: 100%;
   display: inline-block;
+  margin-top: 2rem;
 }
 
 .scorebar-example {
   display: block;
-  width: 50%;
+  width: 30%;
   margin: auto;
 }
