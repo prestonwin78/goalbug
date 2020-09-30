@@ -96,7 +96,7 @@ class ScoreContainer extends React.Component {
         <SettingsForm setSetting={this.setSetting} />
         <h2
           style={{
-            color: "lightgray",
+            color: "#2b2b2b",
             textAlign: "center",
             marginBottom: "1.5rem",
             marginTop: "3rem",

@@ -18,7 +18,7 @@ function ScoreBar(props) {
         {props.scoreText} {props.score}
       </h3>
 
-      <div class="start">
+      <div className="start">
         <h3>{props.start}</h3>
       </div>
 
@@ -32,7 +32,7 @@ function ScoreBar(props) {
         </Spring>
       </div>
 
-      <div class="goal">
+      <div className="goal">
         <h3>{props.goal}</h3>
       </div>
     </div>
