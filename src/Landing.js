@@ -27,14 +27,14 @@ function Landing(props) {
         <img
           src={require("./Images/example.PNG")}
           alt="example scorebar"
-          className="scorebar-example"
+          className="image"
         ></img>
       </div>
       <div className="image-container">
         <img
           src={require("./Images/settings.png")}
           alt="example scorebar"
-          className="scorebar-example"
+          className="image"
         ></img>
       </div>
       <div className="button-container">

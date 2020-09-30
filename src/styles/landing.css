@@ -56,8 +56,20 @@
   margin-top: 2rem;
 }
 
-.scorebar-example {
+.image {
   display: block;
   width: 30%;
   margin: auto;
+}
+
+@media all and (max-width: 600px) {
+  .image {
+    width: 95%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .image {
+    width: 50%;
+  }
 }
