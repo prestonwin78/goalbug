@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./Header";
 import ScoreContainer from "./ScoreContainer";
+import Footer from "./Footer";
 import Landing from "./Landing.js";
 
 class App extends React.Component {
@@ -25,6 +26,7 @@ class App extends React.Component {
         <Header />
         {this.state.onLanding && <Landing changeState={this.changeState} />}
         {!this.state.onLanding && <ScoreContainer />}
+        <Footer />
       </div>
     );
   }

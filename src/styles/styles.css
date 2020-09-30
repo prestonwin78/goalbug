@@ -9,6 +9,17 @@
   padding: 1rem;
 }
 
+.footer {
+  background-color: hsla(222, 54%, 16%, 100%);
+  padding: 1rem;
+}
+
+.footer a {
+  padding: 5% 5% 0 5%;
+  color: white;
+  text-decoration: none;
+}
+
 #title {
   color: white;
   font-family: Arial;

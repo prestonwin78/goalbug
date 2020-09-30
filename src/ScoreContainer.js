@@ -120,6 +120,9 @@ class ScoreContainer extends React.Component {
           decrement={this.decrementScore}
         />
 
+        {/* Empty row for spacing */}
+        <div style={{ paddingTop: "10%" }}></div>
+
         {/* for testing output only */}
         <div style={{ display: "none" }}>
           <h1>goal: {this.state.goal}</h1>
