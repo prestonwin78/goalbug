@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/landing.css";
+import "../styles/landing.css";
 
 function Landing(props) {
   return (
@@ -25,14 +25,14 @@ function Landing(props) {
       </div>
       <div className="image-container">
         <img
-          src={require("./Images/example.PNG")}
+          src={require("../Images/example.PNG")}
           alt="example scorebar"
           className="image"
         ></img>
       </div>
       <div className="image-container">
         <img
-          src={require("./Images/settings.png")}
+          src={require("../Images/settings.png")}
           alt="example scorebar"
           className="image"
         ></img>

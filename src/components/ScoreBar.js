@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles/scorebar.css";
-import "./styles/settings.css";
+import "../styles/scorebar.css";
+import "../styles/settings.css";
 import { Spring } from "react-spring/renderprops";
 
 function ScoreBar(props) {

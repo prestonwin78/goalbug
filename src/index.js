@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from "./Header";
-import ScoreContainer from "./ScoreContainer";
-import Footer from "./Footer";
-import Landing from "./Landing.js";
+import Header from "./components/Header";
+import ScoreContainer from "./components/ScoreContainer";
+import Footer from "./components/Footer";
+import Landing from "./components/Landing.js";
 
 class App extends React.Component {
   constructor() {
