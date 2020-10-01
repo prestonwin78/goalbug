@@ -3,7 +3,7 @@
   font-size: 3rem;
   text-align: center;
   font-weight: 100;
-  padding: 10%;
+  padding: 4rem;
 }
 
 .info-container {
@@ -62,17 +62,17 @@
 
 .image {
   display: block;
-  width: 30%;
+  width: 100%;
   margin: auto;
 }
 
-@media all and (max-width: 600px) {
+@media all and (min-width: 386px) {
   .image {
-    width: 95%;
+    width: 80%;
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 670px) {
   .image {
     width: 50%;
   }
@@ -80,6 +80,6 @@
 
 @media all and (min-width: 1024px) {
   .image {
-    width: 308px; /* matches previous breakpoint */
+    width: 512px; /* matches previous breakpoint */
   }
 }
