@@ -15,11 +15,16 @@
   padding: 2rem 0;
 }
 
+.info-container p {
+  color: hsl(4, 0%, 78%);
+}
+
 .info-container ul {
   padding: 2rem;
   width: 50%;
   margin: auto;
   display: inline-block;
+  color: hsl(4, 0%, 78%);
 }
 
 .info-container li {
@@ -34,7 +39,6 @@
 #get-started {
   padding: 1rem 2rem;
   border-radius: 1rem;
-  border: 1px solid hsl(282, 0%, 57%);
   font-size: 1.25rem;
   background-color: rgb(255, 172, 46);
   color: white;
@@ -42,7 +46,7 @@
   display: block;
   margin: 10% auto;
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid darkslategray;
 }
 
 #get-started:hover {
