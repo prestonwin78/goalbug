@@ -23,9 +23,9 @@ function Landing(props) {
           </ul>
         </div>
       </div>
-      <div className="image-container">
+      <div className="image-container example">
         <img
-          src={require("../Images/example.PNG")}
+          src={require("../Images/Examples/blueexample.png")}
           alt="example scorebar"
           className="image"
         ></img>

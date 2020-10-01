@@ -77,3 +77,9 @@
     width: 50%;
   }
 }
+
+@media all and (min-width: 1024px) {
+  .image {
+    width: 308px; /* matches previous breakpoint */
+  }
+}
