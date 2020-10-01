@@ -3,10 +3,15 @@
   margin: auto;
 }
 
+@media all and (min-width: 1024px) {
+  .controls-container {
+    width: 512px;
+  }
+}
+
 .plus,
 .minus {
   padding: auto;
-  /* text-align: center; */
   border-radius: 0.5rem;
   border-style: none;
   background-color: hsla(63, 80%, 68%, 100%);

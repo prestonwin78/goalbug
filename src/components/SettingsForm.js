@@ -36,73 +36,82 @@ class SettingsForm extends React.Component {
           <h1 id="settings-header">Settings</h1>
         </div>
 
-        <div className="block">
-          <label>Goal</label>
-          <input type="text" name="goal" onChange={this.handleChange} />
-        </div>
+        <div className="grid-container">
+          <div className="col1">
+            <div className="block">
+              <label>Goal</label>
+              <input type="text" name="goal" onChange={this.handleChange} />
+            </div>
 
-        <div className="block">
-          <label>Starting Value</label>
-          <input type="text" name="start" onChange={this.handleChange} />
-        </div>
+            <div className="block">
+              <label>Starting Value</label>
+              <input type="text" name="start" onChange={this.handleChange} />
+            </div>
 
-        <div className="block">
-          <label>Add in increments of</label>
-          <input
-            type="text"
-            name="addIncrements"
-            onChange={this.handleChange}
-          />
-        </div>
+            <div className="block">
+              <label>Add in increments of</label>
+              <input
+                type="text"
+                name="addIncrements"
+                onChange={this.handleChange}
+              />
+            </div>
 
-        <div className="block">
-          <label>Subtract in decrements of</label>
-          <input
-            type="text"
-            name="subDecrements"
-            onChange={this.handleChange}
-          />
-        </div>
+            <div className="block">
+              <label>Subtract in decrements of</label>
+              <input
+                type="text"
+                name="subDecrements"
+                onChange={this.handleChange}
+              />
+            </div>
 
-        <div className="block">
-          <label>Score text:</label>
-          <input type="text" name="scoreText" onChange={this.handleChange} />
-        </div>
+            <div className="block">
+              <label>Score text:</label>
+              <input
+                type="text"
+                name="scoreText"
+                onChange={this.handleChange}
+              />
+            </div>
+          </div>
+          <div className="col2">
+            <div className="block">
+              <label>Background Color</label>
+              <select
+                className="background-select"
+                name="backgroundColor"
+                onChange={this.handleChange}
+              >
+                <option className="navy" value="navy"></option>
+                <option className="blue" value="blue"></option>
+                <option className="red" value="red"></option>
+                <option className="yellow" value="yellow"></option>
+                <option className="green" value="green"></option>
+                <option className="purple" value="purple"></option>
+                <option className="orange" value="orange"></option>
+                <option className="none" value="none"></option>
+              </select>
+            </div>
 
-        <div className="block">
-          <label>Background Color</label>
-          <select
-            className="background-select"
-            name="backgroundColor"
-            onChange={this.handleChange}
-          >
-            <option className="navy" value="navy"></option>
-            <option className="blue" value="blue"></option>
-            <option className="red" value="red"></option>
-            <option className="yellow" value="yellow"></option>
-            <option className="green" value="green"></option>
-            <option className="purple" value="purple"></option>
-            <option className="orange" value="orange"></option>
-            <option className="none" value="none"></option>
-          </select>
-        </div>
-
-        <div className="block">
-          <label>Bar Color</label>
-          <select
-            className="bar-color-select"
-            name="barColor"
-            onChange={this.handleChange}
-          >
-            <option className="navy" value="navy"></option>
-            <option className="blue" value="blue"></option>
-            <option className="red" value="red"></option>
-            <option className="yellow" value="yellow"></option>
-            <option className="green" value="green"></option>
-            <option className="purple" value="purple"></option>
-            <option className="orange" value="orange"></option>
-            <option className="none" value="none"></option>
-          </select>
+            <div className="block">
+              <label>Bar Color</label>
+              <select
+                className="bar-color-select"
+                name="barColor"
+                onChange={this.handleChange}
+              >
+                <option className="navy" value="navy"></option>
+                <option className="blue" value="blue"></option>
+                <option className="red" value="red"></option>
+                <option className="yellow" value="yellow"></option>
+                <option className="green" value="green"></option>
+                <option className="purple" value="purple"></option>
+                <option className="orange" value="orange"></option>
+                <option className="none" value="none"></option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
     );

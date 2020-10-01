@@ -3,8 +3,22 @@
   margin: 2rem auto 2rem auto;
   border: 1px solid gray;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   background-color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+
+.col1 {
+  grid-column: 1;
+}
+
+.col2 {
+  grid-column: 2;
 }
 
 #settings-header {
@@ -12,29 +26,32 @@
 }
 
 .block {
-  width: 80%;
-  margin: 1.25rem 1rem;
+  width: 1fr;
+  margin: 1.25rem 0;
 }
 
 .block label {
-  width: 60%;
+  width: 100%;
   display: inline-block;
   font-weight: 100;
   font-size: 0.9rem;
   color: darkslategray;
 }
 
-.block input {
-  width: 50%;
+.block input,
+.block select {
+  width: 80%;
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid lightgray;
 }
 
+/*
 .background-select,
 .bar-color-select {
   width: 25%;
 }
+*/
 
 .navy {
   background-color: hsla(222, 35%, 37%, 100%);
