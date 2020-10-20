@@ -18,6 +18,7 @@ class App extends React.Component {
     this.setState({
       onLanding: false,
     });
+    window.scrollTo(0, 0);  //scroll to top of page
   }
 
   render() {

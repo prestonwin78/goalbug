@@ -6,12 +6,16 @@
   padding: 4rem;
 }
 
+.info-row {
+  width: 100%;
+  background-color: rgb(18, 9, 66);
+}
+
 .info-container {
   width: 100%;
   margin: 0 auto 2rem auto;
   color: white;
   text-align: center;
-  background-color: rgb(18, 9, 66);
   padding: 2rem 0;
 }
 
@@ -44,7 +48,7 @@
   color: white;
   width: 20%;
   display: block;
-  margin: 10% auto;
+  margin: 5% auto;
   text-align: center;
   border: 2px solid darkslategray;
 }
@@ -67,19 +71,25 @@
 }
 
 @media all and (min-width: 386px) {
-  .image {
+  .image, .info-container {
     width: 80%;
+  }
+  .get-started {
+    width: 40%;
   }
 }
 
 @media all and (min-width: 670px) {
-  .image {
+  .image, .info-container  {
     width: 50%;
+  }
+  #get-started {
+    width: 201px;
   }
 }
 
 @media all and (min-width: 1024px) {
-  .image {
+  .image, .info-container  {
     width: 512px; /* matches previous breakpoint */
   }
 }

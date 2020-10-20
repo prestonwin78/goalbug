@@ -6,21 +6,23 @@ function Landing(props) {
     <div className="body">
       <div className="card">
         <h1 className="landing-header">Goalbug</h1>
-        <div className="info-container">
-          <h2>Modern Scoreboard for Streams</h2>
-          <p>
-            With Goalbug, you can design a custom, modern scorebar to fit your
-            needs and improve your stream.
-          </p>
-          <ul>
-            <li>Customize a scoreboard's color and text</li>
-            <li>
-              Choose how the scoreboard behaves when adding and subtracting
-              points
-            </li>
-            <li>Easy to use</li>
-            <li>Works well with OBS</li>
-          </ul>
+        <div className="info-row">
+          <div className="info-container">
+            <h2>Modern Scoreboard for Streams</h2>
+            <p>
+              With Goalbug, you can design a custom, modern scorebar to fit your
+              needs and improve your stream.
+            </p>
+            <ul>
+              <li>Customize a scoreboard's color and text</li>
+              <li>
+                Choose how the scoreboard behaves when adding and subtracting
+                points
+              </li>
+              <li>Easy to use</li>
+              <li>Works well with OBS</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="image-container example">
